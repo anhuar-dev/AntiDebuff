@@ -28,7 +28,7 @@ public class PlayerListener implements Listener {
     public void onJoin(PlayerJoinEvent event) {
 
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
-
+            plugin.getManagerHandler().getPlayerDataManager().load(event.getPlayer().getUniqueId());
         });
 
     }
@@ -37,9 +37,9 @@ public class PlayerListener implements Listener {
     public void onQuit(PlayerQuitEvent event) {
 
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
+            plugin.getManagerHandler().getPlayerDataManager().save(event.getPlayer().getUniqueId());
         });
 
     }
-
-
+    
 }
