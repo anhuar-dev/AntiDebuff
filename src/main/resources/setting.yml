@@ -11,15 +11,35 @@ DATABASE:
 
 BOSS-BAR:
   ENABLED: true
-  TITLE: "§6§lBossbar"
-  SUBTITLE: "§7§lPortableHorse"
+  TITLE: "&6AntiDebuff Potion - &e%remaining_time%"
   COLOR: "WHITE"
   STYLE: "SOLID"
 
 ACTION-BAR:
   ENABLED: true
-  MESSAGE: "§6§lPortableHorse §7§lby §a§lYourName"
+  MESSAGE: "&6AntiDebuff Potion - &e%remaining_time%"
 
 PAPI-FORMAT:
   ENABLED: true
-  FORMAT: "%portablehorse_player_name%"
+  FORMAT: ""
+
+BLOCKED-EFFECTS:
+  - "BLINDNESS"
+  - "HUNGER"
+  - "POISON"
+  - "SLOWNESS"
+  - "WEAKNESS"
+  - "UNLUCK"
+  - "WITHER"
+  - "LEVITATION"
+
+POTION-ITEM:
+  NAME: "&6AntiDebuff Potion"
+  LORE:
+    - "&7When you drink this potion you will be immune"
+    - "&7to negative potion effects"
+    - "&7for a period of %time%m."
+  COLOR:
+    R: 64
+    G: 224
+    B: 208
