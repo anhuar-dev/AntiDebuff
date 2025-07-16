@@ -1,0 +1,4 @@
+name: AntiDebuff
+version: '1.0-SNAPSHOT'
+main: dev.anhuar.antiDebuff.AntiDebuff
+api-version: '1.21'

@@ -1,0 +1,25 @@
+DATABASE:
+  TYPE: "MONGO" #LOCAL
+
+  MONGO:
+    URI: "mongodb://localhost:27017"
+    DATABASE: "AntiDebuff"
+    COLLECTION: "players"
+
+  LOCAL:
+    FILE: "players.json"
+
+BOSS-BAR:
+  ENABLED: true
+  TITLE: "§6§lBossbar"
+  SUBTITLE: "§7§lPortableHorse"
+  COLOR: "WHITE"
+  STYLE: "SOLID"
+
+ACTION-BAR:
+  ENABLED: true
+  MESSAGE: "§6§lPortableHorse §7§lby §a§lYourName"
+
+PAPI-FORMAT:
+  ENABLED: true
+  FORMAT: "%portablehorse_player_name%"
