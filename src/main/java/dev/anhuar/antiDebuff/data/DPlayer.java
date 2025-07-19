@@ -19,5 +19,7 @@ import lombok.Data;
 public class DPlayer {
 
     private String name;
+    private boolean activeEffect = false;
+    private long timeRemaining = 0L;
 
 }
